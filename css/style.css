@@ -1,116 +1,134 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url(common.css);
 /* ? ========== navBar ============ */
-.nav-img{
-    width: 40px;
-    border: var(--main-color ) 2px solid;
+.nav-img {
+  width: 40px;
+  border: var(--main-color) 2px solid;
 }
-.navbar h1{
-    font-size:1.2rem;
+.navbar h1 {
+  font-size: 1.2rem;
 }
-.nav-link{
-    color: #4A5565;
+.nav-link {
+  color: #4a5565;
 }
 .navbar-nav {
---bs-nav-link-hover-color: var(--main-color);
+  --bs-nav-link-hover-color: var(--main-color);
 }
 .navbar-toggler {
-    color: transparent;
+  color: transparent;
 }
-.navbar button i{
-    color: black;
+.navbar button i {
+  color: black;
 }
-.navbar button i:hover{
-    color: var(--main-color);
+.navbar button i:hover {
+  color: var(--main-color);
 }
 .navbar-nav .nav-link {
-    width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-.sub-title{
-    font-size: 12px;
+.sub-title {
+  font-size: 12px;
 }
 /* ?================ meal ================== */
-.rate-span{
-    top: 20px;
-    left: 20px;
-    padding: 7px;
+.rate-span {
+  top: 20px;
+  left: 20px;
+  padding: 7px;
 }
-.meal{
-    margin: 7%;
+.meal {
+  margin: 7%;
 }
-.main-span{
-    padding-block: 5px;
-    bottom: 5%;
-    left: 5%;
-    width: 90%;
+.main-span {
+  padding-block: 5px;
+  bottom: 5%;
+  left: 5%;
+  width: 90%;
 }
-.main-span div p:nth-child(2){
-    font-size: 12px;
+.main-span div p:nth-child(2) {
+  font-size: 12px;
 }
-.f-span{
-    background-color: #DBFCE7;
-    color:#008236;
+.f-span {
+  background-color: #dbfce7;
+  color: #008236;
 }
-.sec-span{
-    background-color: #DBEAFE;
-    color:#1447e6;
+.sec-span {
+  background-color: #dbeafe;
+  color: #1447e6;
 }
-.icons{
-    right: 1%;
-    top: 5%;
+.icons {
+  right: 1%;
+  top: 5%;
 }
-.icons span:hover{
-    background-color: #FFD6A7;
+.icons span:hover {
+  background-color: #ffd6a7;
 }
-.warning-span{
-    background-color:#FEF2F2;
-    border-left: 5px #e7000b solid;
+.warning-span {
+  background-color: #fef2f2;
+  border-left: 5px #e7000b solid;
 }
-.warning-span .content p:first-child{
-    color:#9f0712;
+.warning-span .content p:first-child {
+  color: #9f0712;
 }
-.warning-span .content p:nth-child(2) ,
-.warning-span i{
-    color:#e7000b;
+.warning-span .content p:nth-child(2),
+.warning-span i {
+  color: #e7000b;
 }
 .ingredients {
-    background-color: #FFF9EB;
+  background-color: #fff9eb;
 }
-.recepi .nav-link{
-    border-radius: 0;
+.recepi .nav-link {
+  border-radius: 0;
 }
-.recepi .nav-link:hover{
-    color: black
+.recepi .nav-link:hover {
+  color: black;
 }
 .nav-pills .nav-link.active {
-    color: var(--main-color);
-    background-color: transparent;
-    border-bottom: 2px solid var(--main-color);
+  color: var(--main-color);
+  background-color: transparent;
+  border-bottom: 2px solid var(--main-color);
 }
 .nutrition .item {
-    background-color: #F9FAFB;
+  background-color: #f9fafb;
 }
-.chefs-tips .item{
-    background-color: #FFFBEB;
-    border-left: 5px #FFB900 solid;
+.chefs-tips .item {
+  background-color: #fffbeb;
+  border-left: 5px #ffb900 solid;
 }
-.chefs-tips i{
-    color: #E17100;
+.chefs-tips i {
+  color: #e17100;
 }
-.main-btn{
-    background-image: linear-gradient(to left ,#F44700,#E80006);
-    transition: all 0.3s;
+.main-btn {
+  background-image: -webkit-gradient(linear, right top, left top, from(#f44700), to(#e80006));
+  background-image: -o-linear-gradient(right, #f44700, #e80006);
+  background-image: linear-gradient(to left, #f44700, #e80006);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
-.main-btn:hover{
-    transform: scale(1.05);
-    background-image: linear-gradient(to left ,#F23D00,#d71c22);
+.main-btn:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  background-image: -webkit-gradient(linear, right top, left top, from(#f23d00), to(#d71c22));
+  background-image: -o-linear-gradient(right, #f23d00, #d71c22);
+  background-image: linear-gradient(to left, #f23d00, #d71c22);
 }
-.numbers{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
+.numbers {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
 }
-.img-wrapper img{
-    object-fit:cover;
+.img-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #pills-nutrition {
   max-height: 300px;
@@ -118,14 +136,15 @@
 }
 /* ?================ media ================== */
 /* mediem */
-@media screen and (min-width:786px) {
-    .img-wrapper ,.contant-wrapper{
-  min-height: 700px;
-}
-.img-wrapper{
+@media screen and (min-width: 786px) {
+  .img-wrapper,
+  .contant-wrapper {
+    min-height: 700px;
+  }
+  .img-wrapper {
     width: 40%;
-}
-.contant-wrapper{
+  }
+  .contant-wrapper {
     width: 60%;
-}
+  }
 }
