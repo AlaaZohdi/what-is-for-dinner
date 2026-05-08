@@ -453,10 +453,8 @@ var meals = [
     ],
   },
 ];
-  var container = ``;
-  function displayMeal () {
-    
-    
+var container = ``;
+function displayMeal() {
   var i = Math.floor(Math.random() * meals.length);
   var ingredientsHtml = ``;
   var instructionsHtml = ``;
@@ -646,6 +644,6 @@ ${warningSpan}
 </article>
 </div>
 `;
-document.getElementById("superMain").innerHTML = container;
+  document.getElementById("superMain").innerHTML = container;
 }
 displayMeal();
